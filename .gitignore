@@ -1,10 +1,40 @@
-# Python-generated files
+
+# dbt generated files
+target/
+logs/
+dbt_packages/
+
+# dbt configuration and user files
+profiles.yml
+.user.yml
+
+# Python
 __pycache__/
-*.py[oc]
+*.py[cod]
+.venv/
+venv/
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
 
-# Virtual environments
-.venv
+# Streamlit secrets and credentials
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+**/secrets.toml
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Private keys and credentials
+keys/
+*.pem
+*.p8
+*.key
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/

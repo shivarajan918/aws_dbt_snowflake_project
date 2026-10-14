@@ -5,3 +5,57 @@ logs/
 .env
 profiles.yml
 .user.yml
+streamlit_dashboard/.streamlit/secrets.toml
+
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.p8
+*.key
+
+# dbt generated files
+target/
+logs/
+dbt_packages/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Secrets and credentials
+keys/
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+
+# Private keys
+*.pem
+*.p8
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# dbt generated files
+target/
+logs/
+dbt_packages/
